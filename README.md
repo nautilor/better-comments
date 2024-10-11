@@ -19,9 +19,9 @@ Add the following line to your Neovim configuration:
 
 ```lua
 use {
-  'nautilor/comment-highlighter',
+  'nautilor/better-comments',
   config = function()
-    require('comment_highlighter').setup()
+    require('better-comments').setup()
   end
 }
 ```
@@ -32,9 +32,9 @@ Add the following to your Neovim configuration:
 
 ```lua
 {
-  'nautilor/comment-highlighter',
+  'nautilor/better-comments',
   config = function()
-    require('comment_highlighter').setup()
+    require('better-comments').setup()
   end
 }
 ```
@@ -44,13 +44,13 @@ Add the following to your Neovim configuration:
 Add the following line to your Neovim configuration:
 
 ```vim
-Plug 'nautilor/comment-highlighter'
+Plug 'nautilor/better-comments'
 ```
 
 Then, add this to your configuration:
 
 ```vim
-lua require('comment_highlighter').setup()
+lua require('better-comments').setup()
 ```
 
 ## Configuration
@@ -58,7 +58,7 @@ lua require('comment_highlighter').setup()
 You can customize the colors of the highlighted comments by passing a table to the `setup` function:
 
 ```lua
-require('comment_highlighter').setup({
+require('better-comments').setup({
   colors = {
     todo = '#FFA500',  -- Orange
     fixme = '#FF69B4', -- Hot Pink

@@ -1,33 +1,33 @@
-*comment_highlighter.txt*  Highlight TODO, FIXME, and NOTE comments
+*better-comments.txt*  Highlight TODO, FIXME, and NOTE comments
 
 ==============================================================================
-CONTENTS                                        *comment-highlighter-contents*
+CONTENTS                                        *better-comments-contents*
 
-    1. Introduction ................ |comment-highlighter-introduction|
-    2. Installation ................ |comment-highlighter-installation|
-    3. Configuration ............... |comment-highlighter-configuration|
-    4. Usage ....................... |comment-highlighter-usage|
-    5. Supported Languages ......... |comment-highlighter-languages|
-    6. License ..................... |comment-highlighter-license|
+    1. Introduction ................ |better-comments-introduction|
+    2. Installation ................ |better-comments-installation|
+    3. Configuration ............... |better-comments-configuration|
+    4. Usage ....................... |better-comments-usage|
+    5. Supported Languages ......... |better-comments-languages|
+    6. License ..................... |better-comments-license|
 
 ==============================================================================
-1. INTRODUCTION                               *comment-highlighter-introduction*
+1. INTRODUCTION                               *better-comments-introduction*
 
 Comment Highlighter is a Neovim plugin that enhances your coding experience by
 highlighting TODO, FIXME, and NOTE comments in your code. It supports multiple
 programming languages and allows for easy color customization.
 
 ==============================================================================
-2. INSTALLATION                               *comment-highlighter-installation*
+2. INSTALLATION                               *better-comments-installation*
 
 You can install Comment Highlighter using various plugin managers:
 
 Using packer.nvim:
 >
     use {
-      'nautilor/comment-highlighter',
+      'nautilor/better-comments',
       config = function()
-        require('comment_highlighter').setup()
+        require('better-comments').setup()
       end
     }
 <
@@ -35,29 +35,29 @@ Using packer.nvim:
 Using lazy.nvim:
 >
     {
-      'nautilor/comment-highlighter',
+      'nautilor/better-comments',
       config = function()
-        require('comment_highlighter').setup()
+        require('better-comments').setup()
       end
     }
 <
 
 Using vim-plug:
 >
-    Plug 'nautilor/comment-highlighter'
+    Plug 'nautilor/better-comments'
 <
 Then add to your configuration:
 >
-    lua require('comment_highlighter').setup()
+    lua require('better-comments').setup()
 <
 
 ==============================================================================
-3. CONFIGURATION                             *comment-highlighter-configuration*
+3. CONFIGURATION                             *better-comments-configuration*
 
 You can customize the colors of the highlighted comments by passing a table to
 the `setup` function:
 >
-    require('comment_highlighter').setup({
+    require('better-comments').setup({
       colors = {
         todo = '#FFA500',  -- Orange
         fixme = '#FF69B4', -- Hot Pink
@@ -72,7 +72,7 @@ Default colors:
     - NOTE: Dodger Blue (#1E90FF)
 
 ==============================================================================
-4. USAGE                                           *comment-highlighter-usage*
+4. USAGE                                           *better-comments-usage*
 
 Once installed and configured, the plugin will automatically highlight TODO,
 FIXME, and NOTE comments in your code. The highlighting will update when you:
@@ -83,7 +83,7 @@ FIXME, and NOTE comments in your code. The highlighting will update when you:
     - Exit insert mode
 
 ==============================================================================
-5. SUPPORTED LANGUAGES                         *comment-highlighter-languages*
+5. SUPPORTED LANGUAGES                         *better-comments-languages*
 
 The plugin supports comment highlighting for the following languages:
 
@@ -110,7 +110,7 @@ The plugin supports comment highlighting for the following languages:
 For unsupported file types, the plugin defaults to C-style comments.
 
 ==============================================================================
-6. LICENSE                                       *comment-highlighter-license*
+6. LICENSE                                       *better-comments-license*
 
 This project is licensed under the MIT License.
 
