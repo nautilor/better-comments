@@ -25,7 +25,7 @@ You can install Comment Highlighter using various plugin managers:
 Using packer.nvim:
 >
     use {
-      'your-username/comment-highlighter',
+      'nautilor/comment-highlighter',
       config = function()
         require('comment_highlighter').setup()
       end
@@ -35,7 +35,7 @@ Using packer.nvim:
 Using lazy.nvim:
 >
     {
-      'your-username/comment-highlighter',
+      'nautilor/comment-highlighter',
       config = function()
         require('comment_highlighter').setup()
       end
@@ -44,7 +44,7 @@ Using lazy.nvim:
 
 Using vim-plug:
 >
-    Plug 'your-username/comment-highlighter'
+    Plug 'nautilor/comment-highlighter'
 <
 Then add to your configuration:
 >

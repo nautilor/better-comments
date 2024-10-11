@@ -19,7 +19,7 @@ Add the following line to your Neovim configuration:
 
 ```lua
 use {
-  'your-username/comment-highlighter',
+  'nautilor/comment-highlighter',
   config = function()
     require('comment_highlighter').setup()
   end
@@ -32,7 +32,7 @@ Add the following to your Neovim configuration:
 
 ```lua
 {
-  'your-username/comment-highlighter',
+  'nautilor/comment-highlighter',
   config = function()
     require('comment_highlighter').setup()
   end
@@ -44,7 +44,7 @@ Add the following to your Neovim configuration:
 Add the following line to your Neovim configuration:
 
 ```vim
-Plug 'your-username/comment-highlighter'
+Plug 'nautilor/comment-highlighter'
 ```
 
 Then, add this to your configuration:
