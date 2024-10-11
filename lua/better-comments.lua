@@ -78,12 +78,6 @@ local function highlight_comments()
         vim.api.nvim_buf_add_highlight(bufnr, -1, 'CommentFixme', i-1, start_col-1, -1)
       elseif comment_text:match('NOTE') then
         vim.api.nvim_buf_add_highlight(bufnr, -1, 'CommentNote', i-1, start_col-1, -1)
-			elseif comment_text:match('*') then
-        vim.api.nvim_buf_add_highlight(bufnr, -1, 'CommentTodo', i-1, start_col-1, -1)
-			elseif comment_text:match('!') then
-        vim.api.nvim_buf_add_highlight(bufnr, -1, 'CommentFixme', i-1, start_col-1, -1)
-			elseif comment_text:match('?') then
-        vim.api.nvim_buf_add_highlight(bufnr, -1, 'CommentNote', i-1, start_col-1, -1)
       end
     end
   end
