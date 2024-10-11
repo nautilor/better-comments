@@ -2,6 +2,8 @@
 
 Comment Highlighter is a Neovim plugin that enhances your coding experience by highlighting TODO, FIXME, and NOTE comments in your code. It supports multiple programming languages and allows for easy color customization.
 
+[![demo](demo/demo.jpg)](demo/demo.mp4)
+
 ## Features
 
 - Highlights TODO, FIXME, and NOTE comments
@@ -74,11 +76,9 @@ If you don't specify custom colors, the plugin will use these default colors:
 - NOTE: Dodger Blue (`#1E90FF`)
 
 ## Keywords
-Along with the standard TODO/FIXME/NOTE notation i also added
-
-- ** For a TODO comment
-- !! For a FIXME comment
-- ?? For a note Comment
+- TODO comment
+- FIXME comment
+- NOTE Comment
 
 
 ## Supported Languages
